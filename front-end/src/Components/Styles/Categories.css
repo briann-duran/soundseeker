@@ -1,0 +1,113 @@
+.container-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.categories-sidebar {
+  align-items: center;
+  background: white;
+  box-shadow: 0 1px 3px -2px black;
+  display: flex;
+  flex-direction: column;
+  transition:
+    width 0.4s,
+    opacity 0.4s;
+  width: 300px;
+}
+
+.list-products {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.div-inputs-aside {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.div-btn-aside {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkbox-container {
+  align-items: flex-start;
+  display: flex;
+  justify-items: flex-start;
+}
+
+.instruments {
+  display: flex;
+  margin-top: 60px;
+}
+
+.pagination-categories {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-left: 260px;
+}
+
+.btn-aside {
+  align-items: center;
+  background-color: #3563e9;
+  color: white;
+  margin-right: 10px;
+  margin-top: 50px;
+  padding: 10px 20px;
+}
+
+.custom-checkbox input[type='checkbox'] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+@media (min-width: 489px) {
+  .btn-aside {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-h4 {
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    width: 276px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .categories-sidebar {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+    left: 0;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .list-products {
+    margin-top: 350px;
+  }
+}

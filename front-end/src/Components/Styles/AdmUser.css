@@ -1,0 +1,59 @@
+.user-container {
+  min-height: 100vh;
+  width: 620px;
+}
+
+.btn-cambio-rol {
+  background-color: #3563e9;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  width: 180px;
+}
+
+.btn-cambio-rol:hover {
+  background-color: #2e54d8;
+}
+
+.enlarge {
+  font-size: 1.75rem;
+}
+
+.shrink {
+  font-size: 0.75rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+}
+
+.horizontal {
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px #070c8f21;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.user-details {
+  text-align: left;
+  width: 250px;
+
+  > p {
+    margin-block: 0.75rem;
+  }
+}

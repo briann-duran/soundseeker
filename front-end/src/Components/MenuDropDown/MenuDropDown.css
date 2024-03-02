@@ -1,0 +1,68 @@
+.dropdown {
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown:hover .menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown > a {
+  align-items: center;
+  display: flex;
+  gap: 2px;
+  height: 72px;
+}
+
+.menu > a {
+  color: #3563e9;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-around;
+  padding: 12px 20px;
+}
+
+.dropdown > a > img {
+  width: 20px;
+}
+
+.menu > a:hover {
+  background: #f6f7f9;
+  color: #3563e9;
+}
+
+.menu {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  box-shadow: 0 40px 40px rgb(0 0 0 / 6%);
+  display: grid;
+  opacity: 0;
+  padding: 8px 0;
+  position: absolute;
+  right: -20px;
+  top: 60px;
+  transition: 0.25s;
+  visibility: hidden;
+  width: 180px;
+}
+
+.menu::before {
+  background: inherit;
+  border-right: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  content: '';
+  height: 12px;
+  position: absolute;
+  right: 22px;
+  rotate: -45deg;
+  top: -7px;
+  width: 12px;
+}
+
+.FaUserCircle {
+  color: #3563e9;
+  height: 45px;
+  width: 45px;
+}

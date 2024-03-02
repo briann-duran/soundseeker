@@ -1,0 +1,27 @@
+.favs-container {
+  box-shadow: 1px 0 6px -2px black;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  width: 99%;
+}
+
+.favoritos-grid {
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+  width: 96%;
+}
+
+.delete {
+  background-color: brown;
+  width: 100%;
+}
+
+.list-favs {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 70px;
+  width: 100%;
+}

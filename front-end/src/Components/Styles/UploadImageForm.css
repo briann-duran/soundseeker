@@ -1,0 +1,66 @@
+.drop-container {
+  align-items: center;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  gap: 10px;
+  height: 120px;
+  justify-content: center;
+  padding: 10px;
+  transition:
+    background 0.2s ease-in-out,
+    border 0.2s ease-in-out;
+}
+
+.drop-container:hover,
+.drop-container.drag-active {
+  background: #eee;
+  border-color: #111;
+}
+
+.drop-container:hover .drop-title,
+.drop-container.drag-active .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #1a202c;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+input[type='file'] {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #444;
+  max-width: 100%;
+  padding: 8px;
+  width: 350px;
+}
+
+input[type='file']::file-selector-button {
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 10px 20px;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type='file']::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+.uploaded-images-preview {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}

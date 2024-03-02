@@ -1,0 +1,71 @@
+.container-cardUserData {
+  align-items: center;
+  background: #3563e9;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.25s ease-in-out;
+  width: 350px;
+}
+
+.cardUserData {
+  position: relative;
+}
+
+.userDataInfo {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.userDataInfo h2 {
+  color: #fff;
+  margin: 4px;
+  text-align: center;
+}
+
+.userDataInfo p {
+  color: #fff;
+  margin: 4px;
+  text-align: center;
+}
+
+.cardUserData a .dataUserCircle {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.cardUserData a {
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  color: #3563e9;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px;
+  position: relative;
+  text-decoration: inherit;
+}
+
+.checkCircle {
+  align-items: center;
+  background: #3563e9;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  bottom: 5px;
+  color: #ffffff;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  position: absolute;
+  right: 5px;
+  width: 35px;
+}

@@ -1,0 +1,55 @@
+version: '3.8'
+services:
+  gradle_build:
+    build:
+      context: ./back-end
+      dockerfile: Gradle.Dockerfile
+    volumes:
+      - .:/home/gradle/src
+      - gradle_cache:/home/gradle/.gradle
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=soundseeker
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
+      timeout: 20s
+      retries: 10
+  back:
+    build:
+      context: ./back-end
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/soundseeker?createDatabaseIfNotExist=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=${DB_PASSWORD}
+      - JAVAMAIL_CORREO=${JAVAMAIL_CORREO}
+      - JAVAMAIL_CONTRASENA=${JAVAMAIL_CONTRASENA}
+      - URL_SERVIDOR=${URL_SERVIDOR}
+      - URL_SERVIDOR_S3=${URL_SERVIDOR_S3}
+      - AWS=${AWS}
+    depends_on:
+      gradle_build:
+        condition: service_completed_successfully
+      db:
+        condition: service_healthy
+  front:
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile
+      args:
+        - VITE_APP_BACK_END_URL=${VITE_APP_BACK_END_URL}
+        - VITE_APP_IMAGE_URL=${VITE_APP_IMAGE_URL}
+        - VITE_APP_SERVER_URL=${VITE_APP_SERVER_URL}
+    ports:
+      - "3000:80"
+    depends_on:
+      back:
+        condition: service_started
+volumes:
+  gradle_cache:

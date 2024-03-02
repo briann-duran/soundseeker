@@ -1,0 +1,39 @@
+.banner-principal {
+  margin-top: 80px;
+}
+
+.swiper {
+  height: 100%;
+  width: 900px;
+}
+
+.swiper-slide {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+}
+
+.swiper-slide img {
+  border-radius: 8px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .swiper {
+    height: 100%;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swiper {
+    height: 100%;
+    width: 375px;
+  }
+}

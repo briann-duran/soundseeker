@@ -1,0 +1,5 @@
+.main-data-user {
+  display: grid;
+  min-height: 80vh;
+  place-content: center;
+}

@@ -1,0 +1,81 @@
+.box {
+  align-items: center;
+  background: #3563e9;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 270px;
+}
+
+.navlinks {
+  display: grid;
+  padding: 10px;
+}
+
+.nav-button-admin {
+  align-items: center;
+  background: #3563e9;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  gap: 16px;
+  height: 41px;
+  line-height: 1;
+  margin-top: 5px;
+  outline: none;
+  padding: 0 10px;
+  width: 193px;
+}
+
+.nav-button-admin:focus {
+  outline: none;
+}
+
+.nav-button-admin > span {
+  opacity: 0.5;
+}
+
+.nav-button-admin:hover {
+  background: rgb(0 0 0 / 30%);
+  color: white;
+  opacity: 1;
+}
+
+.nav-button-admin:active {
+  background: white;
+}
+
+.navHome {
+  height: auto;
+  width: 19px;
+}
+
+.title-panel {
+  color: white;
+}
+
+.box p {
+  color: white;
+}
+
+.active-button {
+  background-color: white;
+  color: black;
+}
+
+.active-button p {
+  color: black;
+}
+
+.active-button:hover {
+  background-color: white;
+  color: black;
+}

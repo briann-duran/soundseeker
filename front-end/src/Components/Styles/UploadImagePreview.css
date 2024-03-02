@@ -1,0 +1,16 @@
+.image-upload-preview {
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+  width: 150px;
+
+  > img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}

@@ -1,0 +1,328 @@
+.form-home {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+
+.input-form-home-pickUp {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  color: #3563e9;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 150px;
+  justify-content: space-around;
+  width: 900px;
+}
+
+.input-form-home {
+  background-color: var(--box);
+  border-radius: 24px;
+  display: grid;
+  max-width: 250px;
+  place-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.search-input-form-home {
+  background: transparent url(/src/Imgs/search-icon-form.svg) no-repeat 45% 50%;
+  background-size: 30px;
+  border: 1px solid #3563e9;
+  border-radius: 40px;
+  color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  height: 44px;
+  overflow: hidden;
+  position: relative;
+  transition:
+    width 300ms,
+    background-position 300ms;
+  width: 44px;
+}
+
+.search-input-form-home:hover {
+  background: transparent url(/src/Imgs/search-icon-form.svg) no-repeat 45% 50%;
+  background-size: 30px;
+  border: 1px solid #3563e9;
+  cursor: pointer;
+}
+
+.search-input-form-home:focus,
+.search-input-form-home:not(:placeholder-shown) {
+  background: transparent url(/src/Imgs/search-icon-form.svg) no-repeat 10px 50%;
+  background-size: 30px;
+  border: 1px solid #3563e9;
+  color: #3563e9;
+  cursor: text;
+  max-width: 200px;
+  outline: none;
+  padding-left: 60px;
+  transition:
+    width 500ms,
+    background-position 300ms;
+  width: 100%;
+}
+
+.btn-buscar {
+  --timing: 2s;
+  --width: 150px;
+  background: #3563e9;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  padding-block: 1em;
+  transition: all 0.2s;
+  width: var(--width);
+}
+
+.btn-buscar:hover {
+  animation: var(--timing) linear dance6123 infinite;
+  transform: scale(1.1) translateY(-1px);
+}
+
+.div-btn-buscar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25px;
+}
+
+.search-date2 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.input-form-home-pickUp h3 {
+  color: #333;
+  margin: 0 0 0 5px;
+  text-align: left;
+  width: 100%;
+}
+
+.search-results-container-form-home {
+  background-color: #fff;
+  border-top: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  top: calc(100% + 5px);
+  width: 80%;
+  z-index: 999;
+}
+
+.ul-search-principal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.li-search-principal {
+  color: #3563e9;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-align: left;
+}
+
+.li-search-principal:hover {
+  background-color: #f5f5f5;
+}
+
+.input-container-date-search-form2 {
+  margin: 50px auto;
+  position: relative;
+  width: 200px;
+}
+
+.input-container-date-search-form2 input[type='date'] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: #333;
+  font-size: 20px;
+  outline: none;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.input-container-date-search-form2 .label {
+  color: #ccc;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.input-container-date-search-form2 input[type='date']:focus ~ .label,
+.input-container-date-search-form2 input[type='date']:valid ~ .label {
+  color: #333;
+  font-size: 16px;
+  top: -20px;
+}
+
+.input-container-date-search-form2 .underline {
+  background-color: #333;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.input-container-date-search-form2 input[type='date']:focus ~ .underline,
+.input-container-date-search-form2 input[type='date']:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+.btn-search {
+  background: none;
+  border: none;
+  color: #8b8ba7;
+}
+
+.btn-search-form {
+  --timing: 0.3s;
+  align-items: center;
+  background: var(--input-bg, #fff);
+  --input-bg: #f6f7f9;
+  --after-border-radius: 1px;
+  border-radius: var(--border-radius);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  --border-color: #2f2ee9;
+  display: flex;
+  --border-height: 2px;
+  height: var(--height-of-input);
+  --height-of-input: 40px;
+  --width-of-input: 200px;
+  padding-inline: 0.8em;
+  position: relative;
+  --border-radius: 30px;
+  transition: border-radius 0.5s ease;
+  width: var(--width-of-input);
+}
+
+.search-input-form-home2 {
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
+  height: 100%;
+  padding-block: 0.7em;
+  padding-inline: 0.5em;
+  width: 100%;
+}
+
+.btn-search-form:before {
+  background: var(--border-color);
+  border-radius: 1px;
+  bottom: 0;
+  content: '';
+  height: var(--border-height);
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--timing) ease;
+  width: 100%;
+}
+
+.btn-search-form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+.search-input-form-home2:focus {
+  outline: none;
+}
+
+.btn-search-form:focus-within:before {
+  transform: scale(1);
+}
+
+.reset-btn-search-form {
+  background: none;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.reset-btn-search-form:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.btn-search:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.search-input-form-home2:not(:placeholder-shown) ~ .reset-btn-search-form {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-search-form svg {
+  margin-top: 3px;
+  width: 17px;
+}
+
+.MuiPickersToolbarButton-toolbarBtn {
+  outline: none;
+}
+
+.customDatePickerStyle {
+  border: none !important;
+  height: 30px !important;
+  width: 160px !important;
+}
+
+@media (max-width: 768px) {
+  .form-home {
+    align-items: center;
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+  }
+
+  .input-form-home-pickUp {
+    align-items: center;
+    flex-direction: column;
+    height: 380px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .btn-buscar {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .search-date2 {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .input-form-home-pickUp h3 {
+    color: #333;
+    margin: 0 0 0 5px;
+    text-align: center;
+    width: 100%;
+  }
+}

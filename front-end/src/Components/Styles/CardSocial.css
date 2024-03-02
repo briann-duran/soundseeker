@@ -1,0 +1,340 @@
+.flip-card {
+  background-color: transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 270px;
+  perspective: 1000px;
+  width: 245px;
+}
+
+.flip-card-inner {
+  height: 100%;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  width: 100%;
+}
+
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+  border-radius: 2em;
+  height: 100%;
+  padding: 5px;
+  position: absolute;
+  width: 100%;
+}
+
+.flip-card-front {
+  background-color: white;
+  border: 4px solid #3563e9;
+}
+
+.profile-image {
+  background-color: transparent;
+  border: none;
+  border-radius: 5em;
+  height: 120px;
+  margin-left: 50px;
+  margin-top: 15px;
+  width: 120px;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+
+.pfp {
+  border-radius: 35em;
+  fill: #c143da;
+}
+
+.name-instrument {
+  color: #3563e9;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.flip-card-back {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 4px solid #3563e9;
+  padding: 11px;
+  transform: rotateY(180deg);
+}
+
+.description {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.socialbar {
+  background-color: transparent;
+  border-radius: 3em;
+  color: white;
+  margin-left: 10px;
+  margin-top: 11px;
+  padding: 14px;
+  width: 90%;
+  word-spacing: 24px;
+}
+
+.socialbar svg {
+  color: #c143da;
+  height: 20px;
+  transition: 0.4s;
+  width: 20px;
+}
+
+.socialbar svg:hover {
+  color: white;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-back a {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 700;
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 0.25s;
+  width: 60%;
+  z-index: 2;
+}
+
+.card-back .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4 {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: 0.25s;
+  width: 70px;
+}
+
+.card-back a {
+  transform: scale(1);
+}
+
+.card-back .social-link1:hover {
+  animation: bounce_613 0.4s linear;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: #f09433;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.card-back .social-link2:hover {
+  animation: bounce_613 0.4s linear;
+  background-color: #00ccff;
+}
+
+.card-back .social-link3:hover {
+  animation: bounce_613 0.4s linear;
+  background-color: #5865f2;
+}
+
+.card-back .social-link4:hover {
+  animation: bounce_613 0.4s linear;
+  background-color: #12a50b;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card3 {
+  background-color: #3563e9;
+  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
+  height: 300px;
+  position: relative;
+  width: 250px;
+}
+
+.imge-social-instrument {
+  align-items: center;
+  background-color: #3563e9;
+  display: flex;
+  height: 70px;
+  padding: 10px;
+}
+
+.usericon-social-card3 img {
+  height: 50px;
+  width: 50px;
+}
+
+.userName-card3-social {
+  color: white;
+}
+
+.description-card3-social {
+  background-color: white;
+  border-color: #141414;
+  border-radius: 5px;
+  height: 130px;
+  overflow-y: auto;
+  transform: translate(5px, 6px);
+  width: 240px;
+}
+
+.description-card3-social p {
+  color: black;
+  margin: 0;
+  text-align: justify;
+}
+
+.card3-social {
+  bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 0.25s;
+  width: 100%;
+  z-index: 2;
+}
+
+.card3-social .card3-social-link1,
+.card3-social .card3-social-link2,
+.card3-social .card3-social-link3,
+.card3-social .card3-social-link4 {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: 0.25s;
+  width: 50px;
+}
+
+.card3-social a {
+  transform: scale(1);
+}
+
+.card3-social .card3-social-link1:hover {
+  animation: bounce_613 0.4s linear;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: #f09433;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.card3-social .card3-social-link2:hover {
+  animation: bounce_613 0.4s linear;
+  background-color: #00ccff;
+}
+
+.card3-social .card3-social-link3:hover {
+  animation: bounce_613 0.4s linear;
+  background-color: #5865f2;
+}
+
+.card3-social .card3-social-link4:hover {
+  animation: bounce_613 0.4s linear;
+  background-color: #12a50b;
+}
+
+.card3-social-link4:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

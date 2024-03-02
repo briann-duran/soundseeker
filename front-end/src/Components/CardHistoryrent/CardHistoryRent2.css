@@ -1,0 +1,198 @@
+.card-history2 {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 20px;
+  width: 800px;
+}
+
+.card-history-title-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-history-img-2 {
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  position: relative;
+  width: 300px;
+}
+
+.card-history-date-price-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.rating-instrument {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0;
+  margin-left: 20px;
+}
+
+.rating-instrument input[type='radio'] {
+  display: none;
+}
+
+.rating-instrument label {
+  color: rgba(187, 183, 183, 0.726);
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 2px;
+}
+
+.rating-instrument label:before {
+  content: '\2605';
+}
+
+.rating-instrument input[type='radio']:checked ~ label:before {
+  color: #016bf5;
+  content: '\2606';
+}
+
+.div-rating {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.btn-volver-alquilar {
+  background-color: #3563e9;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  height: 44px;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+  width: auto;
+}
+
+.btn-cancelar-reserva {
+  align-items: center;
+  background: #e62222;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: flex;
+  height: 50px;
+  width: 150px;
+}
+
+.btn-cancelar-reserva .txt-cancelar-reserva {
+  transition: 100ms;
+}
+
+.txt-cancelar-reserva {
+  color: white;
+  font-weight: bold;
+  transform: translateX(35px);
+}
+
+.icon-cancel-reserva {
+  align-items: center;
+  display: flex;
+  fill: #eee;
+  height: 40px;
+  justify-content: center;
+  position: absolute;
+  transform: translateX(110px);
+  width: 20px;
+}
+
+.btn-cancelar-reserva:hover {
+  background: #ff3636;
+}
+
+.btn-cancelar-reserva:hover .txt-cancelar-reserva {
+  color: transparent;
+}
+
+.btn-cancelar-reserva:hover .icon-cancel-reserva {
+  border-left: none;
+  transform: translateX(0);
+  width: 150px;
+}
+
+.btn-cancelar-reserva:focus {
+  outline: none;
+}
+
+.btn-cancelar-reserva:active .icon-cancel-reserva {
+  transform: scale(1);
+}
+
+.txt-card-history-date-price {
+  font-weight: 700;
+  margin: 0;
+}
+
+.vertical-line {
+  background-color: #000;
+  border: none;
+  height: 100px;
+  margin: 10px;
+  transform: rotate(180deg);
+  width: 3px;
+}
+
+.stepper-carhistory2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 90%;
+}
+
+@media (max-width: 880px) {
+  .card-history2 {
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-top: 50px;
+    width: 375px;
+  }
+
+  .card-history-title-2 {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card-history-img-2 {
+    height: auto;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .card-history-date-price-2 {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .vertical-line {
+    height: 1px;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .btn-volver-alquilar {
+    margin-top: 20px;
+    width: auto;
+  }
+}

@@ -1,0 +1,124 @@
+.page-add-instrument {
+  align-items: center;
+  background: #f6f7f9;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.modal-add-instrument {
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 20px 30px #070c8f21;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 25px 0;
+  position: fixed;
+  width: 450px;
+  z-index: 999;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-create {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.div-form-instrument-category {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type='checkbox'] {
+  margin-left: 5px;
+}
+
+.input-form-product[type='number'],
+.input-form-product[type='text'],
+select,
+.textarea-form-addinstrument {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.textarea-form-addinstrument {
+  height: 150px;
+}
+
+.btn-add-category {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.btn-add-category:hover {
+  background-color: #0056b3;
+}
+
+.btn-submit-instrument {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.btn-submit-instrument:hover {
+  background-color: #0056b3;
+}
+
+.btn-cancel-instrument {
+  background-color: #ff2600;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.btn-cancel-instrument:hover {
+  background-color: #b30000;
+}
+
+.group-btn-submit-instrument {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.error {
+  color: #ff2600;
+}

@@ -1,0 +1,198 @@
+.card {
+  --hoverContorno: #959595;
+  align-items: center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 388px;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  width: 250px;
+}
+
+.link-card {
+  color: black;
+}
+
+.card:hover {
+  -webkit-animation: cardAnimacion 1.4s;
+  animation: cardAnimacion 1.4s;
+  box-shadow: 0 0 0 0.8em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes cardAnimacion {
+  0% {
+    box-shadow: 0 0 0 0 var(--hoverContorno);
+  }
+}
+
+@keyframes cardAnimacion {
+  0% {
+    box-shadow: 0 0 0 0 var(--hoverContorno);
+  }
+}
+
+.card-price-button {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-rent {
+  background-color: #3563e9;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  height: 44px;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+  width: 116px;
+}
+
+.btn-rent:hover {
+  background-color: #3563e9;
+  box-shadow: #3563e9 0 7px 29px 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-rent:active {
+  background-color: #3563e9;
+  box-shadow: #3563e9;
+  color: hsl(0, 0%, 100%);
+  transform: translateY(3px);
+  transition: 50ms;
+}
+
+.btn-rent:focus {
+  outline: none;
+}
+
+.card-h4 {
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.card-image {
+  align-items: center;
+  background: var(--bg-color);
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  top: calc(50% - 57px);
+  width: 250px;
+}
+
+.card-star {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  left: 18px;
+  position: absolute;
+  top: 308px;
+}
+
+.card-price {
+  color: black;
+}
+
+.social-favs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-icon-share {
+  all: initial;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-icon-share:hover {
+  background-color: transparent;
+  transform: scale(1.2);
+}
+
+.btn-icon-share img {
+  height: 24px;
+  width: 24px;
+}
+
+.btn-icon-share:focus {
+  border: none;
+  outline: none;
+}
+
+.card-modal-container {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.card-social-modal {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.btn-icon-heart {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-icon-heart:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+.btn-icon-heart:hover {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.btn-icon-heart::after {
+  border: none;
+}
+
+.heart {
+  height: 22px;
+  width: 22px;
+}
+
+@media (max-width: 768px) {
+  .card-h4 {
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+  }
+}

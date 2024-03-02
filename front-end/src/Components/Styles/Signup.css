@@ -1,0 +1,239 @@
+.form-signup {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 700px;
+  padding: 20px;
+  position: relative;
+  width: 400px;
+}
+
+.title-signup {
+  align-items: center;
+  color: #3563e9;
+  display: flex;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-block-end: 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+.title-signup::before {
+  height: 18px;
+  width: 18px;
+}
+
+.title-signup::after {
+  animation: pulse 1s linear infinite;
+  height: 18px;
+  width: 18px;
+}
+
+.title-signup::before,
+.title-signup::after {
+  background-color: #3563e9;
+  border-radius: 50%;
+  content: '';
+  height: 16px;
+  left: 0;
+  position: absolute;
+  width: 16px;
+}
+
+.message-signup,
+.signin {
+  color: black;
+  font-size: 15px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #3563e9;
+}
+
+.input-signup[type='text'] {
+  background-color: #f3f3f3;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  height: 40px;
+  margin-bottom: 10px;
+  outline: none;
+  overflow: hidden;
+  padding-left: 0.8em;
+  transition: all 0.5s;
+}
+
+.input-signup[type='text']:hover,
+.input-signup[type='text']:focus {
+  background-color: white;
+  border: 2px solid #3563e9;
+  box-shadow: 0 0 0 7px rgb(74, 157, 236, 20%);
+}
+
+.input-signup {
+  background-color: #f3f3f3;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  height: 40px;
+  margin-bottom: 10px;
+  outline: none;
+  overflow: hidden;
+  padding-left: 0.8em;
+  transition: all 0.5s;
+}
+
+.input-signup:hover,
+.input-signup:focus {
+  background-color: white;
+  border: 2px solid #3563e9;
+  box-shadow: 0 0 0 7px rgb(74, 157, 236, 20%);
+}
+
+.submit-signup {
+  background-color: #3563e9;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.submit-signup:hover {
+  background-color: #4e75e9;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.password-validation {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-block: 0 0.5rem;
+}
+
+.blue {
+  color: #3563e9;
+}
+
+.grey {
+  color: #c4c4c4;
+}
+
+.loading-sign {
+  display: flex;
+  flex-direction: column;
+}
+
+#page-loading {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+#container-loading {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#h3-loading {
+  color: black;
+}
+
+#ring-loading {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 190px;
+  position: absolute;
+  width: 190px;
+}
+
+#ring-loading:nth-child(1) {
+  animation: rotate1 2s linear infinite;
+  border-bottom: 8px solid #3563e9;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotateX(50deg) rotateZ(110deg);
+  }
+
+  to {
+    transform: rotateX(50deg) rotateZ(470deg);
+  }
+}
+
+#ring-loading:nth-child(2) {
+  animation: rotate2 2s linear infinite;
+  border-bottom: 8px solid #3563e9;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+  }
+
+  to {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+  }
+}
+
+#ring-loading:nth-child(3) {
+  animation: rotate3 2s linear infinite;
+  border-bottom: 8px solid #3563e9;
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+  }
+
+  to {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+  }
+}
+
+#ring-loading:nth-child(4) {
+  animation: rotate4 2s linear infinite;
+  border-bottom: 8px solid #3563e9;
+}
+
+@keyframes rotate4 {
+  from {
+    transform: rotateX(70deg) rotateZ(270deg);
+  }
+
+  to {
+    transform: rotateX(70deg) rotateZ(630deg);
+  }
+}

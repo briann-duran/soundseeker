@@ -1,0 +1,18 @@
+.stepper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.stepper div {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.stepper hr {
+  margin: 4px;
+  width: 80%;
+}

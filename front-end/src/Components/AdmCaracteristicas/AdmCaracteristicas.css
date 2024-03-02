@@ -1,0 +1,217 @@
+.main-container {
+  border: 1px solid;
+  width: 100%;
+}
+
+.search-bar {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.search {
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.xs-hide {
+  border: none;
+  color: #e5e5e5;
+}
+
+.xs-hide ::placeholder {
+  border: none;
+}
+
+.icon button {
+  background-color: white;
+  border: none;
+  color: #e5e5e5;
+  cursor: pointer;
+}
+
+.titulo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -10px;
+  padding: 0 30px;
+}
+
+.titulo button {
+  background-color: #3563e9;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  width: 180px;
+}
+
+hr {
+  color: #bdc6d6;
+  width: 98%;
+}
+
+.categorias-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.categoria-item {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  padding: 0 10px;
+}
+
+.categoria-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+
+.cat-titulo {
+  display: flex;
+  width: 100%;
+}
+
+.caracteristicas-container {
+  display: grid;
+  grid-auto-rows: minmax(auto);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 0fr));
+}
+
+.categoria-item h3 {
+  margin-right: 10px;
+}
+
+.separator {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.caracteristica {
+  align-items: center;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 5px 0 8px 1px #888888;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 4px;
+  width: 80px;
+}
+
+.caracteristica img {
+  height: 40px;
+  width: 40px;
+}
+
+.caracteristica p {
+  font-size: 12px;
+  margin-top: -2px;
+}
+
+.caracteristica button {
+  align-items: center;
+  background-color: #3563e9;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  font-size: 10px;
+  height: 20px;
+  justify-content: center;
+  margin: 2px;
+  width: 50px;
+}
+
+.modal-caracteristica {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.modal-content {
+  align-items: center;
+  background-color: white;
+  border: 2px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 480px;
+}
+
+.modal-content label {
+  color: rgb(26, 32, 44);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.lbl-nombre-caracteristica {
+  color: rgb(26, 32, 44);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px 0px;
+  text-align: left;
+  width: 100%;
+}
+
+.modal-content input,
+select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 90%;
+}
+
+.modal-caracteristica button {
+  background-color: #3563e9;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.enlarge-field {
+  width: 100%;
+}
+
+.btns-caracteristicas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 300px;
+}

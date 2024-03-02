@@ -1,0 +1,58 @@
+.dropdown {
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown:hover .menu-cardsocial {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown > a {
+  align-items: center;
+  display: flex;
+  gap: 2px;
+  height: 72px;
+}
+
+.menu-cardsocial > a {
+  color: #3563e9;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-around;
+  padding: 12px 20px;
+}
+
+.dropdown > a > img {
+  width: 20px;
+}
+
+.menu-cardsocial > a:hover {
+  background: #f6f7f9;
+  color: #3563e9;
+}
+
+.menu-cardsocial {
+  display: grid;
+  left: 5px;
+  opacity: 0;
+  position: absolute;
+
+  top: 25px;
+  transition: 0.25s;
+  visibility: hidden;
+  z-index: 9999;
+}
+
+.menu-cardsocial::before {
+  background: inherit;
+  content: '';
+
+  position: absolute;
+}
+
+.IoShareOutline {
+  color: #3563e9;
+  height: 25px;
+  width: 25px;
+}

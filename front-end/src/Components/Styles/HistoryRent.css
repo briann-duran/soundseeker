@@ -1,0 +1,12 @@
+.content-history {
+  align-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-column: auto;
+  justify-content: space-between;
+  justify-items: start;
+  margin-bottom: 150px;
+  margin-top: 70px;
+}
