@@ -43,7 +43,7 @@ con metodologías ágiles para afinar cada detalle en sprints productivos.
 
 ### Vídeo de funcionamiento
 
-[SoundSeekerDemo.webm](SoundSeekerDemo.webm)
+[SoundSeekerDemo.webm](https://github.com/DavidGMont/soundseeker/assets/106042108/82422059-0977-4271-b0cd-d6ccf2a3db5c)
 
 **Nota:** _Este vídeo muestra exclusivamente el funcionamiento de la aplicación con el rol de usuario anónimo y
 autenticado; sin embargo, las funcionalidades de administrador están disponibles y operativas en la aplicación._
