@@ -153,6 +153,8 @@ visualización y gestión de productos.
     - [Visual Studio Code](https://code.visualstudio.com/)
     - [Git](https://git-scm.com/)
     - [GitHub](https://www.github.com/)
+- 🎨 Diseño UX/UI
+    - [Figma](https://www.figma.com/design/DiBU1cuHEIt0DIO1gJz7Pj/Proyecto-Prueba-2?node-id=1-5&p=f)
 
 ### Lo que aprendimos
 
@@ -236,7 +238,7 @@ aplicación.
 ## 👥 Autores
 
 - Agustina Barca ([@agusbarca](https://github.com/agusbarca))
-- Brian Durán ([@Nairb-code](https://github.com/Nairb-code))
+- [Brian Durán ([@Nairb-code](https://github.com/Nairb-code)) ](https://github.com/briann-duran)
 - Diego Parula ([@DiegoParula](https://github.com/DiegoParula))
 - Juan García ([@DavidGMont](https://github.com/DavidGMont))
 - Lucía Zanotti ([@luciazanotti](https://github.com/luciazanotti))
