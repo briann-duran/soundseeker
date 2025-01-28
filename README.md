@@ -154,7 +154,7 @@ visualización y gestión de productos.
     - [Git](https://git-scm.com/)
     - [GitHub](https://www.github.com/)
 - 🎨 Diseño UX/UI
-    - [Figma](https://www.figma.com/design/DiBU1cuHEIt0DIO1gJz7Pj/Proyecto-Prueba-2?node-id=1-5&p=f)](https://www.figma.com/)
+    - [[Figma](https://www.figma.com/design/DiBU1cuHEIt0DIO1gJz7Pj/Proyecto-Prueba-2?node-id=1-5&p=f)](https://www.figma.com/)
     - [Ver diseño aquí](https://www.figma.com/design/DiBU1cuHEIt0DIO1gJz7Pj/Proyecto-Prueba-2?node-id=1-5&p=f)
 
 ### Lo que aprendimos
